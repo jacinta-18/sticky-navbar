@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+
+}
+.top-container{
+    background-image: url("https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGtleWJvYXJkfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    height: 100vh;
+    background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.top-container h1{
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    transition: background-color 0.4s;
+
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+}
+
+.navbar ul li a{
+    color: red;
+
+}
+.navbar.active{
+    background-color: black;
+}
+.navbar.active ul li a{
+    color: white;
+}
+
+
+@media screen and (max-width: 411px){
+    .top-container h1{
+        font-size: 40px;
+        text-align: center;
+       
+    }
+   .navbar ul li a{
+    margin: 1;
+    font-size: 13px;
+    
+   }
+@media  screen and (max-width: 393px) {
+    .navbar ul li a{
+        margin: 0.2;
+        font-size: 12px;
+        
+       }
+    
+}
+
+
+
+}
+@media screen and (max-width: 384px){
+    .navbar ul li a{
+        margin: 1 1px;
+        font-size: 11px;
+        
+       }
+    }
+       @media screen and (max-width: 360px){
+   
+        .navbar ul li a{
+        margin: 1px;
+         font-size: 11px;
+         padding-right: 10px;
+         
+         
+        }
+    }
+        @media screen and (max-width: 320px){
+      
+            .navbar ul{
+                display: block;
+                margin-bottom: 10px;
+                padding-bottom: 2px;
+            }
+       
+
+            .navbar ul li a{
+                margin: 1px;
+                 font-size: 11px;
+                 padding-right: 10px;
+                 
+                 
+                }
+
+}
